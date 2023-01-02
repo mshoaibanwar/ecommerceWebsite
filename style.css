@@ -1,0 +1,2174 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans MT';
+    background-color: #ffffff;
+    color: black;
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: max-content;
+}
+
+.logo a {
+    margin-top: 30px;
+    font-size: 38px !important;
+}
+
+.topnav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: white;
+    /* border-bottom: 1px solid rgb(180, 180, 180); */
+    color: black;
+    text-align: center;
+    /* position: relative; */
+    height: max-content;
+}
+
+.topnav button {
+    color: black;
+    /* white text */
+    padding: 1%;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: right;
+    /* Float the buttons side by side */
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    bottom: -3px;
+}
+
+.topnav button:hover {
+    background-color: white;
+    color: rgb(118, 118, 118);
+}
+
+.topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 1.2%;
+    text-decoration: none;
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    font-family: 'Gill Sans MT';
+}
+
+.topnav input[type=text] {
+    float: left;
+    padding: 1%;
+    border: rgb(0, 0, 0);
+    font-size: 17px;
+    z-index: 1;
+    position: relative;
+    margin: 0.5%;
+    height: max-content;
+    width: 20%;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#cart-quantity {
+    color: white;
+    background-color: red;
+    padding: 1px 5px;
+    position: absolute;
+    right: 3px;
+    border-radius: 15px;
+    font-weight: bolder;
+    top: 3px;
+    font-size: smaller;
+}
+
+.add-to-cart:active {
+    display: block;
+}
+
+
+/* SideNav for Mobile */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 50px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav #mySearch {
+    width: 90%;
+    margin: 5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        height: 8%;
+    }
+    .topnav button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 13%;
+    }
+    .topnav #cartbtn {
+        right: 1.5%;
+    }
+    .topnav #menubtn {
+        display: block !important;
+        right: auto;
+        float: left;
+    }
+    .topnav .searchbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    footer .row .column {
+        width: 100%;
+    }
+    .navbar {
+        display: grid !important;
+        justify-content: unset !important;
+    }
+    .navbar a {
+        text-align: left !important;
+    }
+    #navbar {
+        display: none !important;
+    }
+    .category-group {
+        display: block !important;
+    }
+    .category-group a {
+        color: #000 !important;
+    }
+    footer .row .column p {
+        padding: 30px;
+    }
+    footer .row .column h2 {
+        padding-left: 30px;
+    }
+    .row .column {
+        float: none;
+        width: 100%;
+    }
+    .row .column02 {
+        float: none;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .row .column02 .slideshow-container {
+        width: 100% !important;
+        margin-top: 4%;
+        margin-bottom: -10%;
+    }
+    .row .column02 h2 {
+        padding-left: 0;
+    }
+    .btn-group .card button {
+        float: none;
+    }
+    .btn-group .card {
+        width: 90%;
+        margin-left: 5%;
+        float: none !important;
+        overflow: unset;
+    }
+    .btn-group .card img {
+        height: auto;
+    }
+    #SizeButtons .btn {
+        margin-left: 0 !important;
+    }
+    .slideshow-container .pprev,
+    .slideshow-container .pnext {
+        padding: 7px;
+    }
+    .chline1 p {
+        margin-right: 9px !important;
+    }
+    .vl {
+        display: none;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .productmySlides .products .card {
+        width: 90% !important;
+        margin-top: 4% !important;
+    }
+    .picontainer .pimage {
+        height: auto;
+    }
+    .row .column02 .center .pagination a {
+        margin: 0 !important;
+    }
+    .flastrow {
+        display: -webkit-box;
+        overflow: auto;
+        background-color: #000 !important;
+    }
+    .flastrow a:hover {
+        color: black !important;
+    }
+    .dotclass {
+        position: unset !important;
+    }
+    .productslideshow-container .prev,
+    .productslideshow-container .next {
+        top: auto;
+        margin-top: auto;
+    }
+    .searchcard {
+        width: 90% !important;
+    }
+    /* .slideshow-container .mySlides img {
+        width: 100% !important;
+        margin: auto !important;
+    } */
+}
+
+
+/* Navbar after topnav   */
+
+
+/* Navbar container */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Gill Sans MT';
+    /* border-bottom: 1px solid rgb(180, 180, 180); */
+}
+
+
+/* Links inside the navbar */
+
+.navbar a {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 22px 16px;
+    text-decoration: none;
+    float: left;
+    font-family: 'Gill Sans MT';
+}
+
+
+/* The dropdown container */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: 'Gill Sans MT';
+}
+
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-size: 14px !important;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 22px 16px;
+    background-color: inherit;
+    font: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.mtext:hover {
+    color: rgb(118, 118, 118);
+}
+
+.mtext::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-top: 5px;
+    height: 1px;
+    background: #000;
+    transition: width .5s;
+}
+
+.mtext:hover::after {
+    width: 100%;
+    /* transition: width .3s; */
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    animation: growDown 300ms ease-in-out;
+    transform-origin: top center;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+/* Mega Menu header, if needed */
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.2s 0.2s ease-out;
+}
+
+.dropdown-content .header {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans MT';
+}
+
+
+/* Create three equal columns that floats next to each other */
+
+.overlay-search {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-search-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+    font-family: 'Gill Sans MT';
+}
+
+.overlay-search .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay-search .closebtn:hover {
+    color: #ccc;
+}
+
+.overlay-search input[type=text] {
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    float: left;
+    width: 80%;
+    border-radius: 0;
+    margin: 0;
+    background: white;
+}
+
+.overlay-search input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay-search button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay-search button:hover {
+    background: #bbb;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+    background-color: white;
+}
+
+
+/* Column for Products Page */
+
+.column02 {
+    float: left;
+    width: 66.67%;
+    padding: 0px;
+    background-color: white;
+}
+
+
+/* Style links inside the columns */
+
+.column a,
+.column02 a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.column h3 {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.column h2,
+.column02 h2 {
+    float: none;
+    color: black;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.column p {
+    float: none;
+    color: black;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.column p a {
+    color: black;
+    padding: 0px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.column p a:hover {
+    background-color: white;
+    text-decoration: underline;
+}
+
+
+/* Add a background color on hover */
+
+footer .row .column p a:hover {
+    background-color: #f7f7f7;
+    text-decoration: underline;
+}
+
+.column a:hover {
+    background-color: #ddd;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    /* margin-top: 1%; */
+    width: 100%;
+    position: relative;
+}
+
+.slideshow-container .mySlides img {
+    width: 100%;
+}
+
+.slideshow-container .mySlides a {
+    padding: 0%;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+
+/* Caption text */
+
+.pprev,
+.pnext {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 10.5%;
+    padding: 2%;
+    margin: 2%;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+/* Position the "next button" to the right */
+
+.slideshow-container a {
+    padding: 14px;
+}
+
+.pnext {
+    right: 0;
+    border-radius: 50%;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.pprev:hover,
+.pnext:hover {
+    background-color: rgba(31, 31, 31, 0.8);
+    color: white;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    /* margin-right: 50px; */
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotclass {
+    position: relative;
+    bottom: 60px;
+}
+
+.active,
+.dot:hover {
+    background-color: #000000;
+}
+
+
+/* Fading animation */
+
+.pdot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 0px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.pdotclass {
+    position: relative;
+    bottom: 30px;
+}
+
+.active,
+.pdot:hover {
+    background-color: #000000;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Shop by Category*/
+
+.btn-group button {
+    color: black;
+    /* white text */
+    padding: 0px 0px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+    border: none;
+    background-color: white;
+}
+
+
+/* Clear floats (clearfix hack) */
+
+.category-group {
+    display: flex;
+    width: 94%;
+    margin-left: 3%;
+}
+
+.category-group a {
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 16.66%;
+    margin-right: 0.5%;
+    text-decoration: none;
+}
+
+.category-group a:hover {
+    background-color: #c2c2c2;
+    color: #000;
+    text-decoration: underline;
+    border: 0.5px solid black;
+}
+
+.btn-group .card {
+    color: black;
+    /* white text */
+    padding: 0px 0px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+    border: none;
+    background-color: white;
+}
+
+
+/* Clear floats (clearfix hack) */
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+
+/* Add a background color on hover */
+
+.btn-group button:hover {
+    background-color: #c2c2c2;
+    text-decoration: underline;
+}
+
+
+/*Collapsable List*/
+
+.collapsible {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible:hover {
+    background-color: #f7f7f7;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.cactive:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+}
+
+.content a {
+    text-align: left;
+}
+
+
+/* Login SignUp Window*/
+
+
+/* Full-width input fields */
+
+.modal input[type=text],
+.modal input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+
+.modal button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal button:hover {
+    opacity: 0.8;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.mcontainer {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 0px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal .regcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/*Product Style*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 31%;
+    margin: auto;
+    text-align: center;
+    margin-left: 0.3%;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.price {
+    color: grey;
+    font-size: 20px;
+    margin: 3%;
+}
+
+.card h3 {
+    margin: 3%;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card img {
+    width: 100%;
+    height: 51vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.products .card img {
+    /* height: auto; */
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    text-decoration: bold;
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+.checked {
+    color: orange;
+}
+
+
+/*Pagination Code*/
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    padding-top: 3%;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+/*Checkbox*/
+
+
+/* The container */
+
+.Checkcontainer {
+    display: block;
+    position: relative;
+    padding: 8px !important;
+    /* margin-bottom: 12px;
+    margin-top: 10px; */
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.Checkcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.Checkcontainer:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.Checkcontainer input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.Checkcontainer input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.Checkcontainer .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/*SLider for product Page*/
+
+.container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.psrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.pscolumn {
+    float: left;
+    width: 16.66%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.pro-btn-group button {
+    background-color: #ffffff;
+    /* Green background */
+    border: 1px solid rgb(114, 114, 114);
+    /* Green border */
+    color: rgb(0, 0, 0);
+    /* white text */
+    padding: 10px 24px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    text-align: center;
+}
+
+
+/* Clear floats (clearfix hack) */
+
+.pro-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.pro-btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+
+/* Add a background color on hover */
+
+.pro-btn-group button:hover {
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
+
+
+/**************************************************************************/
+
+
+/*Product Ratings*/
+
+
+/**************************************************************************/
+
+.ProductRatings {
+    margin-top: 60px;
+}
+
+.category-box a {
+    padding: 0px !important;
+}
+
+.ProductRatings .fa-star.fa {
+    font-size: 25px;
+}
+
+
+/* Three column layout */
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+
+/* Place text to the right */
+
+.rright {
+    text-align: right;
+    padding-right: 15px;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+
+/* Individual bars */
+
+.bar-5 {
+    width: 60%;
+    height: 18px;
+    background-color: #04AA6D;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 18px;
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 18px;
+    background-color: #00bcd4;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 18px;
+    background-color: #ff9800;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 18px;
+    background-color: #f44336;
+}
+
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+
+
+/***/
+
+
+/**/
+
+
+/**/
+
+
+/* Slideshow container */
+
+.productslideshow-container {
+    position: relative;
+}
+
+
+/* Slides */
+
+.productmySlides {
+    display: none;
+    text-align: center;
+}
+
+.dot-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.dot-container .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-container .active,
+.dot-container .dot:hover {
+    background-color: #717171;
+}
+
+.products .card {
+    display: inline-block;
+    width: 18% !important;
+    margin-top: auto !important;
+    height: auto;
+}
+
+.products p {
+    margin: 0;
+}
+
+.picontainer {
+    position: relative;
+    /* width: 50%;
+    max-width: 300px; */
+}
+
+.pimage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.poverlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.picontainer:hover .poverlay {
+    opacity: 1;
+}
+
+
+/* Style the buttons */
+
+.btn {
+    border: 1px solid #666;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Style the active class, and buttons on mouse-over */
+
+.btnactive,
+.btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.CartBtn .badge {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: 15px;
+}
+
+.AddToCart {
+    width: 91%;
+    height: 7%;
+    background-color: yellowgreen;
+    color: white;
+    margin-left: 12px;
+    margin-top: 3%;
+    font-size: 17px;
+}
+
+.AddToCart:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    color: black;
+}
+
+
+/**/
+
+
+/*
+Page 04
+*/
+
+
+/**/
+
+.chline1 p {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 75px;
+}
+
+.chitem {
+    position: relative;
+    display: flex;
+}
+
+.chcol2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.chcol2 .chp {
+    display: flex;
+    flex-direction: column;
+}
+
+.chcol2 .chp p {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.chcol2 a {
+    text-decoration: underline;
+    padding: 0;
+}
+
+.qselector {
+    margin-right: 12%;
+}
+
+#Quantity {
+    width: 200%;
+    height: 10%;
+    text-align: center;
+    border-radius: 13px;
+    padding: unset;
+}
+
+.chprice p {
+    margin: auto;
+}
+
+.bagp {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Vertical Line*/
+
+.vl {
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 310px;
+    position: absolute;
+    left: 66.8%;
+    margin-left: -3px;
+}
+
+.ptocheck {
+    width: 90%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-left: 12px;
+    font-size: 18px;
+}
+
+.remove_item {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(214, 0, 0);
+    color: white;
+    margin: auto;
+    margin-top: 150px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.ptocheck:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/*Page 05 : Checkout Page*/
+
+
+/**/
+
+
+/**/
+
+.chrow {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.chcontainer {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.chbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.chbtn:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #2196F3;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+span.checkprice {
+    float: right;
+    color: grey;
+}
+
+
+/* Feedback Page */
+
+input[type=text],
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 60%;
+}
+
+
+/* The Modal (background) */
+
+.Notimodal {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 200px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.Notimodal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* The Close Button */
+
+.Noticlose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Noticlose:hover,
+.Noticlose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+.modal h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal h2 {
+    text-align: center;
+}
+
+.modal p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+.modal span {
+    font-size: 12px;
+}
+
+.modal a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.modal button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.modal button:active {
+    transform: scale(0.95);
+}
+
+.modal button:focus {
+    outline: none;
+}
+
+.modal button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+.modal form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.modal input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.modal .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.modal .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.modal .sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.modal .container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.modal .sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.modal .container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.modal .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.modal .container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.modal .overlay {
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.modal .container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.modal .overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.modal .overlay-left {
+    transform: translateX(-20%);
+}
+
+.modal .container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.modal .overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.modal .container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+.modal .social-container {
+    margin: 20px 0;
+}
+
+.modal .social-container a {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+
+/* Admin Page*/
+
+.add_cat input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.add_cat label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.add_cat button {
+    background-color: #04AA6D;
+    color: white;
+    margin: 5px;
+    margin-right: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.add_cat button:hover {
+    background-color: #45a049;
+}
+
+.add_cat .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    text-align: center;
+    font-size: large;
+}
+
+.add_cat .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.add_cat .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+.prot {
+    padding-left: 12px !important;
+}
+
+select {
+    width: 91% !important;
+    margin-left: 10px;
+}
+
+.o_body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.orders {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orders p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.searchcard {
+    width: 19.65%;
+}
+
+footer .column a,
+footer .column p,
+footer .column h2 {
+    color: white !important;
+}
+
+footer .column a:hover {
+    color: black !important;
+    background-color: #ddd !important;
+}
